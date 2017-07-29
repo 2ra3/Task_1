@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class DestroyByContact : MonoBehaviour {
 
-    //public Rigidbody rb;
-    //public float pokeForce;
-    
+    //private Rigidbody rb;
 
+    //private GameObject dementor;
+    public float pokeForce;
     void Start()
     {
-       // rb = GetComponent<Rigidbody>();
+        //rb = GetComponent<Rigidbody>();
+        //dementor = GameObject.FindGameObjectWithTag("Dementor");
         
     }
     void OnTriggerEnter(Collider other)
@@ -29,15 +30,19 @@ public class DestroyByContact : MonoBehaviour {
         }
         else
         {
-            Destroy(other.gameObject);
+            //Destroy(other.gameObject);
             Destroy(gameObject);
            
-            /* Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
 
             if (Physics.Raycast(ray, out hit, 100))
-                rb.AddForceAtPosition(ray.direction * pokeForce, hit.point);
-            */
+                if (hit.rigidbody != null)
+                {
+                    hit.rigidbody.AddForceAtPosition(ray.direction * pokeForce, hit.point);
+                }
+                
+            
         }
 
     }

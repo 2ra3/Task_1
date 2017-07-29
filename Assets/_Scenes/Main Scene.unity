@@ -585,14 +585,13 @@ Transform:
 --- !u!82 &1432046196
 AudioSource:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 82024468021737004, guid: a70f33ee56e62c7428a547b0a51ae000,
-    type: 2}
+  m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1432046189}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 941916874fe08a04db8ff76d0300e2b5, type: 3}
+  m_audioClip: {fileID: 8300000, guid: ea81994300ec5a44a9765a448697a00b, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1

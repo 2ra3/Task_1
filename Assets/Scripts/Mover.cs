@@ -5,12 +5,13 @@ using UnityEngine;
 public class Mover : MonoBehaviour {
 
     public float speed;
+
     
-    // private Rigidbody rb;
 
     void Start()
     {
         //rb = GetComponent<Rigidbody>();
+       
 
 
     }
@@ -24,6 +25,8 @@ public class Mover : MonoBehaviour {
         {
             transform.position = Vector3.MoveTowards(transform.position, hit.point, Time.deltaTime * speed);
            
+            
+            
             /*if (hit.rigidbody == null)
             {
                 Destroy(gameObject);
