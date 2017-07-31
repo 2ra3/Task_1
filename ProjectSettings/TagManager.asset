@@ -7,6 +7,7 @@ TagManager:
   - Dementor
   - Wall
   - Ground
+  - Potion
   layers:
   - Default
   - TransparentFX

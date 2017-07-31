@@ -10,10 +10,7 @@ public class Mover : MonoBehaviour {
 
     void Start()
     {
-        //rb = GetComponent<Rigidbody>();
        
-
-
     }
 
      void Update()
@@ -25,12 +22,6 @@ public class Mover : MonoBehaviour {
         {
             transform.position = Vector3.MoveTowards(transform.position, hit.point, Time.deltaTime * speed);
            
-            
-            
-            /*if (hit.rigidbody == null)
-            {
-                Destroy(gameObject);
-            }*/
         }
 
     }

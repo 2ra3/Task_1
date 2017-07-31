@@ -151,6 +151,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9e20575dba2d0645be0dd889d8baa0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  potion: {fileID: 1023141397582978, guid: 3c064a8b59968064c9df5a4c8ef17923, type: 2}
   pokeForce: 900
 --- !u!114 &114613166806641244
 MonoBehaviour:

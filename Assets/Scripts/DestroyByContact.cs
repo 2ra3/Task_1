@@ -7,7 +7,10 @@ public class DestroyByContact : MonoBehaviour {
     //private Rigidbody rb;
 
     //private GameObject dementor;
+    public GameObject potion;
     public float pokeForce;
+    
+
     void Start()
     {
         //rb = GetComponent<Rigidbody>();
@@ -40,10 +43,18 @@ public class DestroyByContact : MonoBehaviour {
                 if (hit.rigidbody != null)
                 {
                     hit.rigidbody.AddForceAtPosition(ray.direction * pokeForce, hit.point);
+                    //potion fall
+                    if (Random.value <= 0.5f)//50% chance of getting a potion to get 10% life
+                    {
+                        Instantiate(potion, hit.transform.position, Quaternion.identity);
+
+                    }
+
                 }
                 
             
         }
 
     }
+    
 }
